@@ -114,3 +114,26 @@ string interpolation or property binding can be used to outputdata
 or can event binding...click and an event happens
 
 #string interpolation
+
+<p>{{ "server" }} with Id {{ serverId }} is {{ getServerStatus()}} </p>
+above and bottom is in two diff places. and connect
+export class ServerComponent{
+serverId=10;
+serverStatus:string="offline"
+
+getServerStatus(){
+return this.serverStatus
+}
+}
+#property binding.
+sometimes can use property binding or string interpolation
+properties can be binded to html elements, directives, and components
+#string inerpt vs prop binding
+
+want to output in template use string int
+want to change some property use property binding
+Dont MIX!@#
+#event binding
+(click)="onCreateServer()">Add Server</button>
+
+<p> {{ serverCreationStatus }}</p>
