@@ -56,5 +56,61 @@ h3{
 color:dodgerblue
 }`]
 })
-
+#component basics
 can use inline ...but not both. better use external if more.
+can select by atritube by putting in square brackets
+
+<div app-servers></div>
+
+selector: '.app-servers',
+or can select by class
+
+<div class="app-servers"></div>
+selecting by id wont work...pseudo selectors dont work
+
+#assignment basics problem and solution...tried multipe tiems to download and run ng serve after following all steps but started code would not work on ng serve.
+deperacation and callback eroor called.
+
+import { Component } from '@angular/core';
+
+@Component(
+{ selector: "app-warning-alert",
+template:`
+    <p>This is a warning, you are in danger!</p>`
+}
+)
+
+export class WarningAlertComponent{
+
+}
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppComponent } from './app.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+
+@NgModule({
+declarations: [
+AppComponent,
+WarningAlertComponent,
+SuccessAlertComponent
+],
+imports: [
+BrowserModule
+],
+providers: [],
+bootstrap: [AppComponent]
+})
+export class AppModule { }
+#what is databidning
+
+Communicaton between typescript and the template html
+string interpolation or property binding can be used to outputdata
+({{ data }})
+([ prperty ])="data
+
+or can event binding...click and an event happens
+
+#string interpolation
