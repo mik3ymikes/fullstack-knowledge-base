@@ -137,3 +137,33 @@ Dont MIX!@#
 (click)="onCreateServer()">Add Server</button>
 
 <p> {{ serverCreationStatus }}</p>
+
+# What are directives
+
+Directives are instructions in the DoM
+Angular add our compnent in this place is a directive?
+
+<p appTurnGreen> Receives green back <p> this is a small example
+
+#using nglf to output data
+directives are added using an attribute selector \*ngIf
+ngIF is a structural directive and changes the structure of the dom. Adds an element or doestn
+
+- sturcutal directive means changing the dom
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }} </p>
+<!-- <ng-template #noServer>
+  <p>no server was created</p>
+</ng-template>> -->
+#styling elements dynamically
+attribute directives dont add or remove elements. they only change the element they added on
+ng style expects to get js object with key value pair. style name key value as value
+
+<p [ng style]="{backgroundColor: getColor()}">
+getcolor(){
+  return this.serverStatus==="online"? "green": "red"
+}
+#ng class
+always use to dynamically add or remove css classes.
+only adds css class if a certain condition is true
+ [ngClass]="{online: serverStatus==='online'}
+#outputting lists
