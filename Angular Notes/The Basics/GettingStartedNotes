@@ -1,0 +1,72 @@
+#Course INtroduction
+
+#What is Angular?
+is a javasccript framework that allows you to create reactive single page applications.
+Create web application that feel like mobile applications...if data is needed from a server load it in the backround. only changing currently loaded page
+
+#Angular vs Angular2
+AngularJs or 1 -had fundametal flaws....was rewrote and then came angular 2 in 2016. bunch of angular versions. Changed every 6 months ..still has same framework. backward compatiable up to 2
+so Angular Js (1) or Angular which is all the rest.
+
+#Angular setup and first App
+use Angular CLI inferace
+make sure that you have the LTS version of NodeJS installed
+used to bundle and optimize projects and npm to manage tendencies for framework and libraries angular uses
+then use command prompt  
+npm install -g @angular/cli@latest
+
+command prompt navigate to folder to create project....
+cd and direct to folder then can create with
+ng new --no-strict for now
+ex ng new my-first-app --no-strict
+n angular routing....use CSS
+
+ng serve
+will run a server on local host so you can see things on browser
+attached ther will be an html file in your angular folder...drag your html file in
+
+#editing the first App
+install VS Code....navigate to the folder you created.
+in json are many packages for development to run correctly.
+src....go to app folder...app component .html
+can get with crl c to quit the local html you opened
+ng serve will open it back up. Should automatically update html. script roots are injectd into the src folder dynamically
+angular is divided into diffrent modules or subpackages....have to add them if you want to use a certain feature. go to app module to add packages by import ....import{} from'@angular/forms";its a typescript feature
+you then need to add it to the imports array...a feature understood by angular
+
+#course sturcture
+two way data binding and what did we do? how all files are connecteed. Componentsa(angular apps are built from them) and databinding(how you output data in you dom or react to user events)
+directives-another feature of angular
+
+services and depundency injection--how diffrent pieces communicate and centralize code and manage state of the application
+
+routing-management of urls-looks like going to diffrent pages but still on one
+
+observables-work with aysncourious code
+
+forms-
+
+pipes-transform output and what u display on output at runtime
+
+http-angular cant connect to a database directly but can connect to a server that can
+
+authentication-
+
+optimizations and ngmodules-
+
+deployment-get it to local machine to view.
+
+animations and testing.
+
+#how to get the most of the course
+
+#what is typescript
+code checked at time u write it and not run it. Complied and doesnt run in browser
+
+#A basic Project Setup using bootstrap
+
+npm install --save bootsrap@3
+will intall locally in the project and put in node install folder.
+Go to angular . json file and changes styles default and add "node_modules/bootstrap/dist/css/bootstrap.min.css
+
+rerun ng serve to reload.
