@@ -71,3 +71,32 @@ then use string interpolation
         <img src="{{recipe.imagePath}}"
         or could use property binding[src]="recipe.imagePath
 #display recipe details
+dont know how to do cross component communnication yet
+
+#creating ingredient model
+
+export class Ingredient{
+public name:string;
+public amount:number
+
+constructor(name:string, amount:number){
+this.name=name,
+this.amount=amount
+}
+}
+
+could do this but there is shortcut
+export class Ingredient{
+constructor(public name: string, public amount: number ){}
+}
+
+more examples of looping
+\*ngFor="let ingredient of ingredients" > {{ingredient.name}} ({{ingredient.amount}})</a>
+
+</ul>
+</div>
+
+  </div>
+# add a shoping list
+
+added buttons and layout
