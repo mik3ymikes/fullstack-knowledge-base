@@ -1,0 +1,16 @@
+#understanding angular error messages
+opening the console is a good idea to view errors
+usually errors are helpful 
+tried to push undefined.
+the servers is declared but not defined
+instead of servers
+servers= []
+#debugging code in the browser using source maps
+cant delete last server
+you can go to srouces to find all the script bundles on the page.
+look at the main bundle ...but not super eay to debug
+Source maps adds to bundle that allows the browser to translate js code to typescript or 
+js to our typescript files. these sources maps are only in development 
+these maps are stripped in production. 
+under webpack you can directly find typescript files
+. file....then src file. then can directly find to use chrome devolpment tools
