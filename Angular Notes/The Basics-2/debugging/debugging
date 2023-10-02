@@ -14,3 +14,7 @@ js to our typescript files. these sources maps are only in development
 these maps are stripped in production. 
 under webpack you can directly find typescript files
 . file....then src file. then can directly find to use chrome devolpment tools
+
+Degugging will always be needed because there is plenty of errors. 
+I beleive going directly in the typescript files under webpack will be extremely
+useful. Seemed pretty straightforward but i will continue to need practice. 
