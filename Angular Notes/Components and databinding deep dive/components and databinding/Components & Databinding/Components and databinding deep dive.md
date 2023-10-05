@@ -36,3 +36,23 @@ encapsulation:ViewEncapsulation. none will end it On the compenent it was applie
 also native. which uses shadow dom
 
 local refrences....get access to elements to templates and use it in the templates or pass it on to use in typescript code
+
+ngonIt is a lifecylce hook
+once a new component is made angular goes through diff phases
+ngONChanges -executed at start of a compoenent...
+and after a bound input property changes
+@ input ...when get new values
+
+ngONint...gets executed once component is intiiazlied
+will run after constructor
+
+ngDoCheck called during evry change detecton run
+property value from 1 to 2 and is in displayed in template?
+
+ngAFterContent Inti-called after ng content has been projected in view
+
+ngafterContentchecked callled when the projected content has been checked
+
+ngAFterviewinit....after view and child view has been initalied
+
+ngonDestryo...called when compennt about to be destyroed.
