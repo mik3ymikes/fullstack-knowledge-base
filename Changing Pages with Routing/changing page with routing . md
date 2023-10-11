@@ -1,0 +1,5 @@
+/ are absolute paths and will alwasy be added to the end 
+  relative paths have no slash at all like "servers" or "./servers"
+  which adds to the currently loaded path or
+  ../mean goes back a path and than can be done multiple times. 
+
